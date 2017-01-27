@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jake Alstad - Python, Django Developer</title>
+        <meta name="description" content="The personal site of Jake Alstad, a Web Developer and Designer living in Wausau, Wisconsin. I love Python, Django, Flask, and other open source software." />
+        <meta name="viewport" content="width=device-width">
+        <link href="{{ url_for('static', filename='css/normalize.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/global.css') }}" rel="stylesheet">
+        <link href='//fonts.googleapis.com/css?family=Raleway:400,700,200' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+        <div id="wrapper" class="resume">
+{% filter markdown %}
+
+# Jake Alstad
+[jake@jalstad.com](mailto:jake@jalstad.com)
+
+[github.com/jakealstad](https://github.com/jakealstad)
+
+---
+
+## SUMMARY
+I am a passionate developer who loves clean, efficient code. I have great written and verbal communication skills, and I love to learn.
+
+
+## SKILLS
+* Python (Django, Flask, etc...)
+* nginx, gunicorn, wsgi
+* Postgres and Redis
+* RESTful APIs (several in-house apps, django-rest-framework, etc...)
+* jQuery and Mootools
+* HTML/CSS
+* Photoshop/Illustrator
+* Familiar with javascript MVC frameworks such as backbone.js and angularjs
+
+## EXPERIENCE
+**Mid-Tier Django Developer, Six Foot LLC**
+Houston, TX — 2016 - Present
+
+***
+
+**Senior Web Developer, Z4 Poker**
+Las Vegas, NV — 2014 - 2016
+
+I work on several projects for a Las Vegas-based online poker startup.
+
+***
+
+**Lead Web Developer, Midwest Communications Inc.**
+Wausau, WI — Aug - Oct, 2014
+
+I worked closely with a small team of developers and designers to write and maintain applications for a radiocentric Django project. I managed several application, database, and media servers as well as handling deployment for the project.
+
+***
+
+**Web Developer, Midwest Communications Inc.**
+
+Wausau, WI — 2012 - 2014
+
+I worked with a small team of developers and designers writing applications for a radio-­centric Django project. Midwest Communications operates over 60 radio station websites from this project.
+
+**Accomplishments**
+
+* Wrote a static page editor for Django to streamline the designers workflow
+* Wrote a RESTful Blog/Podcast application for Django
+* Worked with the team to migrate the sites from our version 2 to version 3 layout
+* Currently working with team to make these sites responsive
+* Collaborated with management to develop and implement company ­wide strategies
+
+***
+
+**Web Designer, Midwest Communications Inc.**
+
+Wausau, WI — 2011 - 2012
+
+I worked with radio station Brand Managers and salespeople in Wisconsin and Michigan to create and maintain promotional pages for our sites. I worked with Photoshop and Illustrator to create graphics and modify images.
+
+**Accomplishments**
+
+* Design and markup efforts contributed to success of numerous radio promotions
+* Participated in award­ winning radio promotions
+* Worked on several contests resulting in a high participation rate
+
+## EDUCATION
+**Northcentral Technical College**
+Programmer/Analyst Program 2009 - 2010
+
+**University of Wisconsin Marathon County**
+General Studies 2007 - 2009
+
+{% endfilter %}
+        </div>
+    </body>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-5181123-5']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+</html>
